@@ -1573,7 +1573,7 @@ div.aligncenter,
 }
 
 .header-transparent .site-header {
-    background-color: transparent;
+    background-color: #fff;
     position: absolute;
     top: 0;
     left: 0;
@@ -2118,7 +2118,7 @@ div.aligncenter,
 }
 
 .header-v1 .nav a {
-    color: #fff;
+    color: #111;
 }
 
 .header-v1 .nav li li>a {
@@ -2254,7 +2254,7 @@ div.aligncenter,
 }
 
 .header-v4 .nav a {
-    color: #fff;
+    color: #111;
 }
 
 .header-v4 .nav li li>a {
@@ -2895,9 +2895,64 @@ div.aligncenter,
  ***/
 
 
-.slide-para{
+ .carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+}
 
-    font-family: "Inter" !important;
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.carousel-slide img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-content {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.carousel-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.carousel-button {
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.carousel-button:hover {
+    background: rgba(0, 0, 0, 0.7);
 }
 
 
