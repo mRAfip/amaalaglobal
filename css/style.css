@@ -4523,7 +4523,7 @@ p {
     width: 67px;
     left: 0;
     bottom: 0;
-    background-color: #ff0000;
+    background-color: var(--brand-yellow);
 }
 
 .widget ul {
