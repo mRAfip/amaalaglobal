@@ -471,11 +471,11 @@ table tr th {
 }
 
 .secpadd {
-    padding: 70px 0px;
+    padding: 120px 0px;
 }
 
 .secpadd2 {
-    padding: 70px 0 40px;
+    padding: 120px 0 40px;
 }
 
 .secpaddbig {
@@ -1109,6 +1109,24 @@ div.aligncenter,
     line-height: 0;
     text-indent: -9999px;
 }
+
+.site-logo img{
+
+    height: 80px !important;
+    width: auto;
+}
+
+/* .logo-text{
+
+    font-weight: 600;
+    color: var(--brand-blue);
+    font-family: 'Chakra Petch';
+    font-size: 3rem;
+    font-style: italic;
+
+
+} */
+
 
 .site-logo .hide-logo {
     display: none;
@@ -2906,7 +2924,72 @@ div.aligncenter,
 
  ***/
 
- 
+ .slide-content{
+
+    color: #fff !important;
+    text-align: left;
+    text-shadow: none !important;
+
+
+ }
+
+
+
+ .slider-para{
+
+
+    font-family: 'Inter';
+    margin-bottom: 15px !important;
+ }
+
+
+ .slider-head{
+
+    font-size: 7rem;
+    color: #fff;
+    font-family: 'Inter';
+    font-weight: 600 !important;
+    margin-top: 75%;
+
+ }
+
+ .slide_btn{
+
+  color: var(--brand-blue);
+  background-color: #fff;
+  padding: 2% 6%;
+  border: none;
+
+
+ }
+
+ @media (max-width: 767.98px) { /* Example breakpoint for small screens (mobile) */
+
+
+    .slider-head{
+
+        font-size: 4rem;
+        color: #fff;
+        font-family: 'Inter';
+        font-weight: 600 !important;
+        margin-top: 75%;
+    
+     }
+    .carousel {
+        min-height: 85vh; /* Minimum 75% of the viewport height */
+      }
+      
+      .carousel-item {
+          min-height: 85vh;
+      }
+      
+      .carousel-item img {
+          object-fit: cover; /* or contain, depending on your needs */
+          min-height: 85vh;
+      }
+
+  }
+
 
 /*--------------------------------------------------------------
    Content
@@ -5780,7 +5863,7 @@ ul.service-menu .children li:last-child {
 .footer-contact .ft-contact i {
     float: left;
     font-size: 23px;
-    color: #ff0000;
+    color: var(--brand-yellow);
     margin-top: -3px;
 }
 
@@ -6852,7 +6935,7 @@ ul.service-menu .children li:last-child {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #ff0000;
+    background-color: var(--brand-yellow);
     -webkit-transition: 0.5s;
     transition: 0.5s;
     opacity: 0;
@@ -6973,7 +7056,7 @@ ul.service-menu .children li:last-child {
 .fh-contact-box i {
     float: left;
     font-size: 26px;
-    color: #ff0000;
+    color: var(--brand-yellow);
 }
 
 .fh-contact-box i:before {
