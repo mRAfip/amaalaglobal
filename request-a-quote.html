@@ -40,7 +40,6 @@
     <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
     <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
 </head>
-
 <body class="home header-transparent  header-sticky header-v1 hide-topbar-mobile">
     <div id="page">
 
@@ -140,6 +139,7 @@
                                     <a href="https://www.instagram.com/amaalaglobal" target="_blank"><i class="fa fa-instagram"></i></a>
 
 
+
                                 </div>
                             </div>
                           
@@ -160,7 +160,6 @@
                             <a href="index.html" class="logo">
                                 <img src="images/logo.png" alt="Amaala Global" class="logo-light show-logo">
                                 <img src="images/logo.png" alt="Amaala Global" class="logo-dark hide-logo">
-                                <!-- <span class="logo-text">Amaala Global</span> -->
                             </a>
                             <h1 class="site-title"><a href="#">Amaala Global : Industrial Manufacturing, Logistics, & Contracting</a></h1>
                             <h2 class="site-description">Efficient Industrial Solutions for Manufacturing, Logistics, & More</h2>
@@ -172,7 +171,7 @@
                                     <li class="has-children"><a href="manufacturing.html">Services</a>
                                         <ul class="sub-menu">
                                             <li><a href="manufacturing.html">Manufacturing</a></li>
-                                            <li><a href="manufacturing.html">Contracting</a></li>
+                                            <li><a href="contracting.html">Contracting</a></li>
                                             <li><a href="logistics.html">Logistics  </a></li>
                                             <li><a href="transportation.html">Transportation </a></li>
                                             <li><a href="facilities.html">Facilities management Services</a></li>
@@ -185,8 +184,7 @@
                                    
                                     <li><a href="contact.html">Contact</a></li>
                                     <li class="extra-menu-item menu-item-button-link">
-                                        <a href="request-a-quote.html" class="fh-btn btn">Get A Quote</a>
-                                    </li>
+                                        <a href="request-a-quote.html" class="fh-btn btn">Get A Quote</a>                                    </li>
                                 </ul>
                             </nav>
                         </div>
@@ -209,7 +207,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12 col-sm-12 col-xs-12">
-                            <h1 class="page-title">About Us</h1>
+                            <h1 class="page-title">Request A Quote</h1>
                         </div>
                     </div>
                 </div>
@@ -221,7 +219,7 @@
                             <nav class="breadcrumb">
                                 <a class="home" href="#"><span>Home</span></a>
                                 <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                <span>About Us</span>
+                                <span>Request A Quote</span>
                             </nav>
                         </div>
                     </div>
@@ -230,190 +228,81 @@
         </div>
         <!--Page Header end-->
 
-        <!--About us-->
-        <section class="aboutsec-2 secpaddbig">
+        <!--Request a Quote -->
+        <section class="whychoose-1 secpadd">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-4 col-sm-6">
-                        <div class="abotimglft">
-                            <img src="images/resources/aboutus-1.jpg" class="img-responsive">
+                <div class="row quote1top">
+                    <div class="col-md-8">
+                        <div class="fh-section-title clearfix  text-left version-dark paddbtm40">
+                            <h2>Request a Quote</h2>
                         </div>
+                        <p>We’re always interested in new projects, big or small. Send us an email and we’ll get in touch shortly, or phone between 8:00 am and 7:00 pm Monday to Saturday.</p>
                     </div>
-                    <div class="col-md-8 col-sm-6">
-                        <div class="abotinforgt">
-                            <div class="fh-section-title clearfix  text-left version-dark paddbtm30">
-                                <h2>From the Chairman</h2>
+                    <div class="col-md-4">
+                        <img src="images/resources/cargocar.png" alt="">
+                    </div>
+                </div>
+                <div class="row quote1forms">
+                    <div class="col-md-12">
+                        <form id="enquiryForm">
+                            <div class="fh-form request-form">
+                                <div class="row">
+                                    <div class="field col-md-4">
+                                        <label>First Name<span class="require">*</span></label>
+                                        <input id="name" placeholder="First Name" type="text">
+                                    </div>
+                                    <!-- <div class="field col-md-4">
+                                        <label>Last Name<span class="require">*</span></label>
+                                        <input placeholder="Last Name" type="text">
+                                    </div> -->
+                                    <div class="field col-md-4">
+                                        <label>Company Email<span class="require">*</span></label>
+                                        <input id="email" name="your-email" placeholder="Email Address" type="email">
+                                    </div>
+                                    <div class="field col-md-4">
+                                        <label>Phone number<span class="require">*</span></label>
+                                        <input id="phone" name="your-phone" placeholder="Phone number" type="text">
+                                    </div>
+                                    <div class="field col-md-6">
+                                        <label>Company name<span class="require">*</span></label>
+                                        <input id="c-name" placeholder="Company Name" type="text">
+                                    </div>
+                                    <div class="field col-md-6">
+                                        
+                                            <label>Service</label>
+                                            <select id="service">
+                                                <option value="Service">Service</option>
+                                                <option>Manufacturing</option>
+                                                <option>Contracting</option>
+                                                <option>Logistics</option>
+                                                <option>Import Export</option>
+                                                <option>Transportation</option>
+                                                <option>Facilities management</option>
+                                            </select>
+                                        
+                        
+                                    </div>
+
+                                    <div class="field col-md-12">
+                                        
+                                        <p class="field submit">
+                                            <input id="submit" value="Submit" class="fh-btn" type="submit">
+                                        </p>
+                    
+                                </div>
+
+                                   
+                                </div>
                             </div>
-                            <p>We strongly believe that pursuing all of these goals is in our interest and in the interest of all of our stakeholders are us customers, employees, investors and the planet as a whole. We add value to cargo people’s interaction
-                                with us, with excellent services or products.</p>
-                            <p>Engaging our employees and nurturinvestment on the stock holds market we show concern , by engaging our employees and nurturinvestment on the stock holds market we show concern.</p>
-                            <img class="paddtop20" src="images/icon/signature-1.png" alt="" />
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </section>
-        <!--About us end-->
+        <!--Request a Quote end -->
 
-        <!-- Feature sec -->
-        <section class="features-3 bluebg">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-4">
-                        <div class="fh-feature-box "><span class="chars">M</span>
-                            <h4 class="box-title">Our Mission</h4>
-                            <div class="desc">Solutions—from manufacturing and contracting to logistics, import/export, transportation, and facilities management—that empower our clients to succeed.</div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="fh-feature-box "><span class="chars">V</span>
-                            <h4 class="box-title">Our Vision</h4>
-                            <div class="desc">To be the leading global provider of integrated industrial solutions, recognized for our innovation, operational excellence, and unwavering commitment to client success.</div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="fh-feature-box "><span class="chars">C</span>
-                            <h4 class="box-title">Core Values</h4>
-                            <div class="desc">We value diversity, treat everyone with dignity, and foster a culture of inclusion.</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Feature sec end -->
-
-        <!-- featured sec -->
-        <section class="whychoos-3 secpadd">
-            <div class="container">
-                <div class="fh-section-title clearfix  text-center version-dark paddbtm30">
-                    <h2>Why Choose Us</h2>
-                </div>
-                <div class="row">
-                    <div class="col-md-4 col-sm-6">
-                        <div class="fh-icon-box  style-2 version-dark  icon-center">
-                            <span class="fh-icon"><i class="flaticon-route"></i></span>
-                            <h4 class="box-title"><span>End-to-End Solutions</span></h4>
-                            <div class="desc">
-                                <p>Clients benefit from a single point of contact for all their industrial needs.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6">
-                        <div class="fh-icon-box  style-2 version-dark  icon-center">
-                            <span class="fh-icon"><i class="flaticon-alarm-clock"></i></span>
-                            <h4 class="box-title"><span>Streamlined Operations</span></h4>
-                            <div class="desc">
-                                <p> Optimize processes, eliminate redundancies, and achieve economies of scale.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6">
-                        <div class="fh-icon-box  style-2 version-dark  icon-center">
-                            <span class="fh-icon"><i class="flaticon-tool"></i></span>
-                            <h4 class="box-title"><span>Efficiency</span></h4>
-                            <div class="desc">
-                                <p>Cost savings for clients, Improved efficiency and faster project completion times.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 col-md-offset-2">
-                        <div class="fh-icon-box  style-2 version-dark  icon-center">
-                            <span class="fh-icon"><i class="flaticon-shield-1"></i></span>
-                            <h4 class="box-title"><span>Multi-Disciplinary Expertise</span></h4>
-                            <div class="desc">
-                                <p>Expert solutions in every area, ensuring the highest quality results for your projects.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6">
-                        <div class="fh-icon-box  style-2 version-dark  icon-center">
-                            <span class="fh-icon"><i class="flaticon-medal-1"></i></span>
-                            <h4 class="box-title"><span>Client Success</span></h4>
-                            <div class="desc">
-                                <p> Personalized solutions, and a commitment to their long-term success.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- featured sec end -->
-
-        <!--Our Team section-->
-        <section class="hometeam-1 graybg secpadd">
-            <div class="container">
-                <div class="fh-section-title clearfix f30  text-left version-dark">
-                    <h2>Meet Our Team</h2>
-                </div>
-                <div class="fh-team">
-                    <div class="team-list slideteam">
-                        <div class="team-member ">
-                            <div class="team-header"><img src="images/team/team-1.jpg" class="attachment-full" alt="" />
-                                <ul class="team-social">
-                                    <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#" target="_blank"><i class="fa fa-skype"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="team-info">
-                                <h4 class="name">Vena Georgeyo</h4><span class="job">Chairman</span></div>
-                        </div>
-                        <div class="team-member ">
-                            <div class="team-header"><img src="images/team/team-2.jpg" class="attachment-full" alt="" />
-                                <ul class="team-social">
-                                    <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#" target="_blank"><i class="fa fa-skype"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="team-info">
-                                <h4 class="name">Johny Zabrila</h4><span class="job">Co-Ordinator</span></div>
-                        </div>
-                        <div class="team-member ">
-                            <div class="team-header"><img src="images/team/team-3.jpg" class="attachment-full" alt="" />
-                                <ul class="team-social">
-                                    <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#" target="_blank"><i class="fa fa-skype"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="team-info">
-                                <h4 class="name">Philil Burphly</h4><span class="job">Manager</span></div>
-                        </div>
-                        <div class="team-member ">
-                            <div class="team-header"><img src="images/team/team-4.jpg" class="attachment-full" alt="" />
-                                <ul class="team-social">
-                                    <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#" target="_blank"><i class="fa fa-skype"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="team-info">
-                                <h4 class="name">Michal Wincent</h4><span class="job">Accountant</span></div>
-                        </div>
-                        <div class="team-member ">
-                            <div class="team-header"><img src="images/team/team-1.jpg" class="attachment-full" alt="" />
-                                <ul class="team-social">
-                                    <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#" target="_blank"><i class="fa fa-skype"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="team-info">
-                                <h4 class="name">Vena Georgeyo</h4><span class="job">Chairman</span></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="teampara">
-                    We’re always looking for talented workers, creative directors and anyone has a
-                    <br> passion for the logistic service <a class="main-color" style="text-decoration: underline;" href="#">join our team.</a>
-                </div>
-            </div>
-        </section>
-        <!--Our Team section end-->
-
-         <!--footer sec-->
-         <div class="footer-widgets widgets-area">
+          <!--footer sec-->
+          <div class="footer-widgets widgets-area">
             <div class="contact-widget">
                 <div class="container">
                     <div class="row">
@@ -516,8 +405,8 @@
     </div>
     <!--End pagewrapper-->
 
-      <!--primary-mobile-nav-->
-      <div class="primary-mobile-nav header-v1" id="primary-mobile-nav" role="navigation">
+        <!--primary-mobile-nav-->
+    <div class="primary-mobile-nav header-v1" id="primary-mobile-nav" role="navigation">
         <a href="#" class="close-canvas-mobile-panel">×</a>
         <ul class="menu">
             <li ><a href="index.html">Home</a>
@@ -551,6 +440,40 @@
 
     <!--Scroll to top-->
     <a id="scroll-top" class="backtotop" href="#page-top"><i class="fa fa-angle-up"></i></a>
+
+   
+
+    <!-- this script for connecting whatsapp -->
+
+    
+    <script>
+        document.getElementById('enquiryForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const company = document.getElementById('c-name').value;
+            const service = document.getElementById('service').value;
+
+            // WhatsApp API integration
+            const whatsappNumber = '+9660532532110'; // Replace with your WhatsApp number in international format (e.g., 1234567890)
+            const message = `Hello, I would like to make an enquiry.\n\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nCompany: ${company}\nService: ${service}`;
+            const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+
+            // Open WhatsApp in a new tab
+            window.open(whatsappURL, '_blank');
+
+            // Show success message
+            const successMessage = document.getElementById('success-message');
+            successMessage.classList.remove('d-none');
+            successMessage.textContent = 'Your enquiry has been successfully submitted via WhatsApp. Thank you!';
+
+            // Clear the form
+            document.getElementById('enquiryForm').reset();
+        });
+    </script>
+
 
 
 
