@@ -424,9 +424,9 @@ padding:80px 0;
 	padding: 40px 0;
 }
 .partener-1 .fh-partner .partner-item {
-	border-width: 3px;
-	border-style: solid;
-	border-color: #101742;
+	border: solid 1px #e0e0e0;
+    padding: 0 20px;
+	
 }
 .partener-1  .owl-carousel .owl-item img {
 display:inline-block;
