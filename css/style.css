@@ -2956,12 +2956,14 @@ div.aligncenter,
 
  .slider-head{
 
-    font-size: 5rem;
+    font-size: 6rem;
     color: #fff;
-    font-family: 'Inter';
+    
     font-weight: 600 !important;
     width: 70%;
     margin-top: 30%;
+    font-family: 'Chakra Petch';
+    font-style: italic;
 
 
  }
@@ -2986,7 +2988,7 @@ div.aligncenter,
         font-family: 'Inter';
         font-weight: 600 !important;
         width: 100% !important;
-        margin-top: 65vh;
+        margin-top: 60vh;
         text-align: center;
 
     
