@@ -80,6 +80,18 @@
 
  ***/
 
+
+
+ @font-face {
+    font-family: 'AlmarenaNeueDisplay'; /* Name to reference the font */
+    src: url('../fonts/AlmarenaNeueDisplay-Regular-iF66afd734ef9a2.otf') format('opentype'); /* Path to the font file */
+    font-weight: normal; /* Adjust as needed: normal, bold, etc. */
+    font-style: normal;  /* Adjust as needed: normal, italic, etc. */
+}
+
+
+
+
 html {
     font-family: sans-serif;
     -ms-text-size-adjust: 100%;
@@ -2944,11 +2956,13 @@ div.aligncenter,
 
  .slider-head{
 
-    font-size: 7rem;
+    font-size: 5rem;
     color: #fff;
     font-family: 'Inter';
     font-weight: 600 !important;
-    margin-top: 75%;
+    width: 70%;
+    margin-top: 30%;
+
 
  }
 
@@ -2967,11 +2981,14 @@ div.aligncenter,
 
     .slider-head{
 
-        font-size: 4rem;
+        font-size: 2.5rem;
         color: #fff;
         font-family: 'Inter';
         font-weight: 600 !important;
-        margin-top: 75%;
+        width: 100% !important;
+        margin-top: 65vh;
+        text-align: center;
+
     
      }
     .carousel {
@@ -2987,6 +3004,14 @@ div.aligncenter,
           min-height: 85vh;
       }
 
+
+      .slider-para{
+
+        text-align: center;
+       color: #cccccc;
+        margin-bottom: 0px !important;
+        
+     }
   }
 
 
