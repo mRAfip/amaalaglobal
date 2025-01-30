@@ -2935,6 +2935,7 @@ div.aligncenter,
 
  ***/
 
+
  .slide-content{
 
     color: #fff !important;
@@ -2950,20 +2951,19 @@ div.aligncenter,
 
 
     font-family: 'Inter';
-    margin-bottom: 15px !important;
+    margin-top: -20px;
+
  }
 
 
  .slider-head{
 
-    font-size: 6rem;
+    font-size: 7rem;
     color: #fff;
-    
     font-weight: 600 !important;
-    width: 70%;
+    width: 90%;
     margin-top: 30%;
-    font-family: 'Chakra Petch';
-    font-style: italic;
+
 
 
  }
@@ -3651,6 +3651,58 @@ p {
 ====================================================================
 
  ***/
+
+
+
+.main-servies{
+
+    padding-bottom: 150px;
+}
+
+
+ .card {
+    transition: transform 0.3s ease-in-out;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img { 
+
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+   
+.card:hover {
+    transform: scale(1.05);
+    color: var(--brand-yellow);
+}
+
+.card-body{
+
+    text-align: center;
+    padding: 25px 15px;
+}
+
+
+.service_head{
+
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 .service .service-inner {
     margin-bottom: 40px;
