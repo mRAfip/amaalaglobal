@@ -2936,84 +2936,99 @@ div.aligncenter,
  ***/
 
 
- .slide-content{
-
-    color: #fff !important;
+ .carousel-item {
+    height: 90vh; /* 90% of the viewport height */
+    background-position: center;
+    background-size: cover;
+  }
+  .carousel-caption {
+    position: absolute;
+    top: 60%;
+    left: 0; 
+    transform: translateY(-50%); 
+    padding: 20px;
+    width: 50%; 
     text-align: left;
-    text-shadow: none !important;
-
-
- }
-
-
-
- .slider-para{
-
-
-    font-family: 'Inter';
-    margin-top: -20px;
-
- }
-
-
- .slider-head{
-
-    font-size: 7rem;
-    color: #fff;
-    font-weight: 600 !important;
-    width: 90%;
-    margin-top: 30%;
-
-
-
- }
-
- .slide_btn{
-
-  color: var(--brand-blue);
-  background-color: #fff;
-  padding: 2% 6%;
-  border: none;
-
-
- }
-
- @media (max-width: 767.98px) { /* Example breakpoint for small screens (mobile) */
-
-
-    .slider-head{
-
-        font-size: 2.5rem;
-        color: #fff;
-        font-family: 'Inter';
-        font-weight: 600 !important;
-        width: 100% !important;
-        margin-top: 60vh;
-        text-align: center;
 
     
-     }
-    .carousel {
-        min-height: 85vh; /* Minimum 75% of the viewport height */
-      }
-      
-      .carousel-item {
-          min-height: 85vh;
-      }
-      
-      .carousel-item img {
-          object-fit: cover; /* or contain, depending on your needs */
-          min-height: 85vh;
+  }
+
+  .carousel-caption h1 {
+
+    color: #fff;
+
+    font-size: 6rem;
+    width: 65%;
+    margin: 0 !important;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+
+  .carousel-caption p {
+
+    color: #fff;
+    opacity: 0.8;
+
+    font-size: 2rem;
+    width: 65%;
+  }
+
+  .carousel-inner img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+
+  .carousel-item video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @media (max-width: 767px) {
+
+
+    .carousel-item {
+        height: 70vh;
+        background-position: center;
+        background-size: cover;
       }
 
 
-      .slider-para{
+      .carousel-caption {
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center !important;
+        width: 100%;
+      }
 
+
+    .carousel-caption h1 {
+
+        color: #fff;
         text-align: center;
-       color: #cccccc;
-        margin-bottom: 0px !important;
+        font-size: 4rem;
+        width: 100% !important;
+        margin: 0 !important;
+       
+      }
+
+      .carousel-caption p {
+
+        color: #fff;
+        opacity: 0.8;
+        text-align: center !important;
+        width: 100%;
         
-     }
+      }
+    
+    
   }
 
 
