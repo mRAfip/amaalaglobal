@@ -2993,7 +2993,7 @@ div.aligncenter,
 
 
     .carousel-item {
-        height: 70vh;
+        height: 80vh;
         background-position: center;
         background-size: cover;
       }
@@ -3001,7 +3001,7 @@ div.aligncenter,
 
       .carousel-caption {
         position: absolute;
-        top: 65%;
+        top: 75%;
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center !important;
@@ -3013,7 +3013,7 @@ div.aligncenter,
 
         color: #fff;
         text-align: center;
-        font-size: 4rem;
+        font-size: 3.5rem;
         width: 100% !important;
         margin: 0 !important;
        
