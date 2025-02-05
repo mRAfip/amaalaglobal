@@ -2942,7 +2942,16 @@ div.aligncenter,
     height: 90vh; /* 90% of the viewport height */
     background-position: center;
     background-size: cover;
+   
   }
+
+  #transport{
+
+    background-image: url('./images/main-slider/slide1.jpg') !important;
+  }
+
+
+
   .carousel-caption {
     position: absolute;
     top: 60%;
@@ -2962,6 +2971,7 @@ div.aligncenter,
     width: 65%;
     margin: 0 !important;
     font-family: 'Lexend' !important;
+    font-weight: 900;
 
     
   }
@@ -2999,6 +3009,12 @@ div.aligncenter,
         height: 80vh;
         background-position: center;
         background-size: cover;
+      
+      }
+
+      .trasport{
+
+        background-image: url('../images/main-slider/slide-mob-1.jpeg') !important;
       }
 
 
@@ -3016,9 +3032,13 @@ div.aligncenter,
 
         color: #fff;
         text-align: center;
-        font-size: 3.5rem;
+        font-size: 4rem;
         width: 100% !important;
         margin: 0 !important;
+
+        margin: 0 !important;
+        font-family: 'Lexend' !important;
+        font-weight: 900;
        
       }
 
