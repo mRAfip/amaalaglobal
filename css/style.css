@@ -1095,8 +1095,8 @@ div.aligncenter,
     position: fixed;
     left: 0px;
     top: 0px;
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: 100px;
     z-index: 999999;
     background-color: #ffffff;
     background-position: center center;
@@ -3008,7 +3008,7 @@ div.aligncenter,
 
 
     .carousel-item {
-        height: 80vh;
+        height: 85vh;
         background-position: center;
         background-size: cover;
       
@@ -3022,7 +3022,7 @@ div.aligncenter,
 
       .carousel-caption {
         position: absolute;
-        top: 75%;
+        top: 66%;
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center !important;
