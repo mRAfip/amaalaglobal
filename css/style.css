@@ -72,7 +72,7 @@
 
 
 /*** 
-
+carousel-caption
 
 ====================================================================
 	Global Settings
@@ -83,8 +83,8 @@
 
 
  @font-face {
-    font-family: 'AlmarenaNeueDisplay'; /* Name to reference the font */
-    src: url('../fonts/AlmarenaNeueDisplay-Regular-iF66afd734ef9a2.otf') format('opentype'); /* Path to the font file */
+    font-family: 'font-header'; /* Name to reference the font */
+    src: url('../fonts/Benzin-Bold.ttf') format('opentype'); /* Path to the font file */
     font-weight: normal; /* Adjust as needed: normal, bold, etc. */
     font-style: normal;  /* Adjust as needed: normal, italic, etc. */
 }
@@ -100,6 +100,7 @@ html {
 
 body {
     margin: 0;
+    text-shadow: none !important;
 }
 
 article,
@@ -2968,10 +2969,11 @@ div.aligncenter,
 
     color: #fff;
     font-size: 6rem;
-    width: 65%;
+    width: 75%;
     margin: 0 !important;
-    font-family: 'Lexend' !important;
-    font-weight: 900;
+    font-family: 'font-header' !important;
+    text-shadow: none !important;
+
 
     
   }
@@ -2983,7 +2985,7 @@ div.aligncenter,
     opacity: 0.8;
 
     font-size: 2rem;
-    width: 65%;
+    width: 75%;
   }
 
   .carousel-inner img {
@@ -3032,13 +3034,13 @@ div.aligncenter,
 
         color: #fff;
         text-align: center;
-        font-size: 4rem;
+        font-size: 3.5rem;
         width: 100% !important;
         margin: 0 !important;
 
         margin: 0 !important;
-        font-family: 'Lexend' !important;
-        font-weight: 900;
+        font-family: 'font-header' !important;
+        text-shadow: none !important;
        
       }
 
