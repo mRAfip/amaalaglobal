@@ -82,6 +82,50 @@ carousel-caption
 
 
 
+
+
+
+
+ /* CSS to Style the Floating Button  */
+
+ .whatsapp-float-btn {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #26CC64; /* WhatsApp green */
+    border-radius: 100px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    font-size: 2rem !important;
+    color: #fff;
+}
+
+
+
+.whatsapp-float-btn:hover {
+    background-color: #128C7E; /* Darker green on hover */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+
+@media only screen and (max-width: 768px) { 
+
+    
+    .whatsapp-float-btn {
+        position: fixed;
+        bottom: 40px;
+        left: 20px;
+      
+    }
+}
+
+
+
+
+
+
+
  @font-face {
     font-family: 'font-header'; /* Name to reference the font */
     src: url('../fonts/Benzin-Bold.ttf') format('opentype'); /* Path to the font file */
@@ -1039,6 +1083,9 @@ div.aligncenter,
     margin-bottom: 1.5em;
 }
 
+
+
+
 .gallery-item {
     display: inline-block;
     text-align: center;
@@ -1127,7 +1174,7 @@ div.aligncenter,
 
 .site-logo img{
 
-    height: 50px !important;
+    height: 70px !important;
     width: auto;
 }
 
@@ -4037,12 +4084,18 @@ p {
 .project-wrapper .project-thumbnail {
     position: relative;
     overflow: hidden;
+    width: 100%;
+  height: 250px; /* Set a fixed height */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .project-wrapper .project-thumbnail .pro-link {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 300px;
     top: 0;
     left: 0;
     background-color: #0c1239;
@@ -4055,6 +4108,9 @@ p {
 .project-wrapper .project-thumbnail img {
     -webkit-transition: 0.5s;
     transition: 0.5s;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .project-wrapper .project-thumbnail .project-button {
@@ -5781,6 +5837,14 @@ ul.service-menu .children li:last-child {
 .footer-widgets {
     color: #fff;
 }
+
+
+.footer-logo img{
+
+    height: 80px !important;
+
+}
+
 
 .footer-widgets .widget {
     margin-bottom: 35px;
