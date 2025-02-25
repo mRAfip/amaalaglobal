@@ -6027,7 +6027,7 @@ ul.service-menu .children li:last-child {
 }
 
 .contact-widget .contact h4 {
-    color: #fff;
+    color: #fff !important;
     margin: 0;
     font-size: 18px;
     font-weight: 400;
