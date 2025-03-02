@@ -109,6 +109,31 @@ carousel-caption
 }
 
 
+
+
+/* this css only related to transportaion header  */
+
+
+.trasport-bg{
+
+    background-image: url('../images/bg/transp-bg.jpg');
+    background-size: cover;
+
+}
+
+.about-bg{
+
+    background-image: url('../images/bg/about-bg.jpg') !important;
+    background-size: cover;
+}
+
+.contact-bg{
+
+    background-image: url('../images/bg/contact-bg.jpg') !important;
+    background-size: cover;
+
+}
+
 @media only screen and (max-width: 768px) { 
 
     
@@ -118,6 +143,28 @@ carousel-caption
         left: 20px;
       
     }
+
+    .trasport-bg{
+
+        background-image: url('../images/bg/traspo-mobile.png');
+        background-size: cover;
+    
+    }
+
+    .about-bg{
+
+        background-image: url('../images/bg/about-bg.jpg');
+        background-size: cover;
+    }
+
+    .contact-bg{
+
+        background-image: url('../images/bg/contact-mobile.png') !important;
+        background-size: cover;
+    
+    }
+    
+    
 }
 
 
