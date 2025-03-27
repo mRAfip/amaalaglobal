@@ -53,7 +53,27 @@
 }
 
 
+ /* Hides the Google Translate widget dropdown */
+ #google_translate_element {
+    display: none !important;
+  }
+  
 
+  .goog-te-banner-frame.skiptranslate,
+  .goog-te-gadget-icon {
+    display: none !important;
+  }
+
+
+
+  .goog-logo-link,
+  .goog-te-gadget {
+    display: none !important;
+  }
+
+  .goog-te-combo {
+    display: none !important;
+  }
 /*** 
 
 
@@ -2786,7 +2806,24 @@ div.aligncenter,
     margin-right: 40px;
     color: #fff ;
     transition: color 0.3s ease;
+    
 }
+
+.header-scrolled .lang-switcher{
+
+    color: #000 ;
+}
+
+.globe-icon{
+
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+   
+}
+
+
+
 /* When scrolled */
 .navbar.scrolled .lang-switcher {
     color: #000 !important; /* Change this to whatever color you want */
@@ -2807,7 +2844,8 @@ div.aligncenter,
 
 .mobile-header-icons {
     display: flex !important;
-    align-items: center;
+    align-items: center !important;
+    justify-content: center;
     gap: 10px;
 }
 .navbar-icon .navbars-line {

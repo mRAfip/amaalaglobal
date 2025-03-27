@@ -67,6 +67,7 @@
 
 <!-- flat icon -->
      <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
+     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
 
 
          <!-- WhatsApp Floating Button -->
@@ -81,6 +82,7 @@
 
         <!-- Preloader-->
         <div class="preloader"></div>
+
 
          <!-- topbar -->
          <div id="fh-header-minimized" class="fh-header-minimized fh-header-v1"></div>
@@ -173,7 +175,8 @@
                          <div class="topbar-right topbar-widgets text-right">
                              <div class="widget cargohub-social-links-widget">
                                  <div class="list-social style-1">
-                                     <a href="#" id="lang-btn" onclick="toggleLanguage()">AR</a>
+                                    <!-- Your Language Switch Button -->
+                                    <a href="#" class="lang-btn" onclick="translateLanguage('ar')">AR</a>                                     <div id="google_translate_element"></div>
                                      <a href="https://www.instagram.com/amaalaglobal" target="_blank"><i class="fa fa-facebook"></i></a>
                                      <a href="https://www.instagram.com/amaalaglobal" target="_blank"><i class="fa fa-instagram"></i></a>
                                      <a href="https://www.linkedin.com/in/amaala-global-52b097345/" target="_blank"><i class="fa fa-linkedin"></i></a>
@@ -188,6 +191,9 @@
                  </div>
              </div>
          </div>
+         <!-- Google Translate Widget (Hidden) -->
+
+         
          <!-- topbar end -->
 
         <!-- masthead -->
@@ -231,8 +237,11 @@
         
                             <!-- Mobile: Language & Toggle Buttons -->
                             <div class="mobile-header-icons d-flex d-md-none align-items-center gap-2">
-                                <a href="#" id="lang-btn" onclick="toggleLanguage()" class="lang-switcher d-md-none">
-                                    🌐 
+                                <!-- <a href="#" id="lang-btn" onclick="toggleLanguage()" class="lang-switcher d-md-none">
+                                    <i  class="fi fi-rr-globe globe-icon"></i>
+                                </a> -->
+                                <a href="#" id="lang-btn" onclick="translateLanguage('ar')" class="lang-switcher d-md-none">
+                                    <i  class="fi fi-rr-globe globe-icon"></i>
                                 </a>
                                 <a href="#" class="navbar-toggle">
                                     <span class="navbar-icon">
@@ -447,7 +456,7 @@
                                 <img src="./images/main-slider/slide3.jpg" class="card-img-top" alt="Image">
                                 <div class="card-body">
                                     <h4 id="serv-t-3" class="card-title">Logistics</h4>
-                                    <p id="serv-p-3" class="card-text">Delivery of any freight from a place to another place quickly to save your cost and your time.</p>
+                                    <p id="serv-p-3" class="card-text">Fast, reliable, and cost-effective—our logistics solutions ensure your freight moves seamlessly, saving you time and money.</p>
                                 </div>
                             </a>
                         </div>
@@ -617,7 +626,7 @@
                                         <i class="fa fa-star fa-md"></i><i class="fa fa-star fa-md"></i>
                                         <i class="fa fa-star fa-md"></i><i class="fa fa-star fa-md"></i>
                                     </div>
-                                    <div class="testi-des">Amaala Global has been a reliable transportation partner for Rapid Access, providing top-notch Lo-Bed, Dyna, Crane and Flatbed services. Their professionalism and efficiency ensure our equipment is transported safely and on time every time!</div>
+                                    <div id="rapid-testi" class="testi-des">Amaala Global has been a reliable transportation partner for Rapid Access, providing top-notch Lo-Bed, Dyna, Crane and Flatbed services. Their professionalism and efficiency ensure our equipment is transported safely and on time every time!</div>
                                     <div class="info clearfix">
                                         <span class="testi-name"><a href="https://www.rapidaccess-gulf.com/" style="text-decoration: none; color: #fff;">Rapid Access</a></span>
                                         <a href="https://www.rapidaccess-gulf.com/" class="testi-job">https://www.rapidaccess-gulf.com/</a>
@@ -637,7 +646,7 @@
                                         <i class="fa fa-star fa-md"></i><i class="fa fa-star fa-md"></i>
                                         <i class="fa fa-star fa-md"></i><i class="fa fa-star fa-md"></i>
                                     </div>
-                                    <div class="testi-des">We greatly appreciate Amaala Global's outstanding service in supporting our team. From staff accommodations to maintenance work, their commitment to excellence has made a significant impact. Highly recommended!</div>
+                                    <div id="lim-testi" class="testi-des">We greatly appreciate Amaala Global's outstanding service in supporting our team. From staff accommodations to maintenance work, their commitment to excellence has made a significant impact. Highly recommended!</div>
                                     <div class="info clearfix">
                                         <span class="testi-name">Limousine</span>
                                         <a href="https://www.limousina.com/" class="testi-job">https://www.limousina.com/</a>
@@ -658,7 +667,7 @@
                                         <i class="fa fa-star fa-md"></i><i class="fa fa-star fa-md"></i>
                                         <i class="fa fa-star fa-md"></i><i class="fa fa-star fa-md"></i>
                                     </div>
-                                    <div class="testi-des">Amaala Global has established itself as a dependable and esteemed partner of Zahid Group, delivering superior transportation services, particularly in Lo-Bed and Hydraulic Lo-Bed operations. Their dedication to safety, precision, and efficiency ensures the consistent and secure delivery of our cargo across all projects.</div>
+                                    <div id="zahi-testi" class="testi-des">Amaala Global has established itself as a dependable and esteemed partner of Zahid Group, delivering superior transportation services, particularly in Lo-Bed and Hydraulic Lo-Bed operations. Their dedication to safety, precision, and efficiency ensures the consistent and secure delivery of our cargo across all projects.</div>
                                     <div class="info clearfix">
                                         <span class="testi-name">Zahid group</span>
                                         <a href="https://zahid.com/" class="testi-job">https://zahid.com/</a>
@@ -849,16 +858,16 @@
                                 <a href="#" class="footer-logo"><img src="images/logo-light.png" alt="Footer Logo"></a>
                             </div>
                             <div class="contact col-md-3 col-xs-12 col-sm-12"><i class="flaticon-signs"></i>
-                                <p>Address : Amaalaa Global,</p>
-                                <h4>Saudi Arabia, Jeddah</h4>
+                                <p id="f-address-p">Address : Amaalaa Global,</p>
+                                <h4 id="f-address-h">Saudi Arabia, Jeddah</h4>
                             </div>
                             <div class="contact col-md-3 col-xs-12 col-sm-12"><i class="flaticon-phone-call "></i>
-                                <p>Toll Free Number :</p>
-                                <h4><a style="color: #fff;" href="tel:+966532532110">+966 532 532 110</a></h4>
+                                <p id="f-num-p">Toll Free Number :</p>
+                                <h4 id="f-num-h"><a style="color: #fff;" href="tel:+966532532110">+966 532 532 110</a></h4>
                             </div>
                             <div class="contact col-md-3 col-xs-12 col-sm-12"><i class="flaticon-clock-1"></i>
-                                <p>Opening Hours :</p>
-                                <h4>7AM – 8PM</h4>
+                                <p id="f-time-p">Opening Hours :</p>
+                                <h4 id="f-time-h">7AM – 8PM</h4>
                             </div>
                         </div>
                     </div>
@@ -935,7 +944,7 @@
             <div class="container">
                 <div class="row">
                     <div class="footer-copyright col-md-6 col-sm-12 col-sx-12">
-                        <div class="site-info">Created by <a href="#">midlandpixels</a>, @ All Right Reserved </div>
+                        <div class="site-info">Created by <a href="http://hostncode.com/">hostncode</a>, @ All Right Reserved </div>
                     </div>
                     <div class="col-md-6 col-sm-12 col-xs-12 text-right footer-text"><a href="#">Amaala global</a> </div>
                 </div>
@@ -971,7 +980,7 @@
         
            
             <li><a href="contact.html">Contact</a></li>
-            <li><a href="#" id="lang-btn" onclick="toggleLanguage()">AR</a></li>
+ 
             <li class="extra-menu-item menu-item-button-link">
                 <a href="request-a-quote.html" class="fh-btn btn">Get A Quote</a>
             </li>
@@ -1024,8 +1033,8 @@
 
 
 
-        <script>
-            // Translation object
+        <!-- <script>
+            
             const translations = {
                 "en": {
                    
@@ -1052,7 +1061,6 @@
                     "servi-h": "Our Main Services",
                     "servi-p": "Our expertise spans a range of key services, providing comprehensive solutions for your business.",
 
-// service cards
                     "serv-t-1": "Transportation",
                     "serv-p-1": "Expert transportation solutions for large and heavy equipment and vehicles.",
 
@@ -1072,7 +1080,7 @@
                     "serv-p-6": "Specialises in international freight forwarding of merchandise and associated general logistic services.",
 
 
-                    //why choose us 
+
 
                     "why-cho-head": "Why Choosing us?",
 
@@ -1091,6 +1099,15 @@
                     "why-cho-requ-quot": "REQUEST A QUOTE",
 
                     "partner-head": "Trusted by industry leaders",
+
+
+
+
+
+                    "rapid-testi": "Amaala Global has been a reliable transportation partner for Rapid Access, providing top-notch Lo-Bed, Dyna, Crane and Flatbed services. Their professionalism and efficiency ensure our equipment is transported safely and on time every time!",
+                    "lim-testi": "We greatly appreciate Amaala Global's outstanding service in supporting our team. From staff accommodations to maintenance work, their commitment to excellence has made a significant impact. Highly recommended!",
+                    "zahi-testi": "Amaala Global has established itself as a dependable and esteemed partner of Zahid Group, delivering superior transportation services, particularly in Lo-Bed and Hydraulic Lo-Bed operations. Their dedication to safety, precision, and efficiency ensures the consistent and secure delivery of our cargo across all projects.",
+
 
 
 
@@ -1167,6 +1184,14 @@
                         "why-cho-requ-quot": "اطلب عرض سعر",
                    
                        "partner-head": "موثوق به من قِبل رواد الصناعة"  , 
+
+
+                    //    testimonial 
+
+                    
+                    "rapid-testi": "تُعد شركة أماﻻ جلوبال شريكًا موثوقًا في خدمات النقل لشركة رابيد آكسس، حيث تقدم خدمات ممتازة باستخدام الشاحنات المنخفضة، والدينا، والرافعات، والشاحنات المسطحة. إن احترافيتهم وكفاءتهم تضمن دائمًا نقل معداتنا بأمان وفي الوقت المحدد!",
+                    "lim-testi": "بكل امتنان، نُعرب عن تقديرنا العميق للخدمة المتميزة التي تقدمها شركة أمالا العالمية في دعم فريقنا. من توفير سكن الموظفين إلى أعمال الصيانة، فقد كان التزامهم بالتميّز ذا أثر كبير. نوصي بهم بشدة!",
+                    "zahi-testi": "أثبتت شركة أماﻻ العالمية نفسها كشريك موثوق ومرموق لمجموعة زاهد، حيث تقدم خدمات نقل عالية الجودة، لا سيما في عمليات النقل باستخدام الشاحنات منخفضة الارتفاع والهيدروليكية. يضمن التزامهم بالسلامة والدقة والكفاءة توصيل شحناتنا بشكل آمن ومستمر في جميع المشاريع.",
 
 
                     
@@ -1246,15 +1271,38 @@
                 document.getElementById("partner-head").textContent = translations[currentLang]["partner-head"];
 
 
+                // testimonial 
+
+                document.getElementById("rapid-testi").textContent = translations[currentLang]["rapid-testi"];
+                document.getElementById("lim-testi").textContent = translations[currentLang]["lim-testi"];
+                document.getElementById("zahi-testi").textContent = translations[currentLang]["zahi-testi"];
+
+
 
                 // Change text direction for Arabic
                 // document.body.style.direction = (currentLang === "ar") ? "rtl" : "ltr";
             }
         </script>
+   -->
+
+
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+    }
   
+    function translateLanguage(lang) {
+      const select = document.querySelector('.goog-te-combo');
+      if (select) {
+        select.value = lang;
+        select.dispatchEvent(new Event('change'));
+      }
+    }
+  </script>
+  
+  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
-
-
+  
 
     <!-- jquery Liabrary -->
     <script src="js/jquery-1.12.4.min.js"></script>
