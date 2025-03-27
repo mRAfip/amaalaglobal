@@ -2784,7 +2784,12 @@ div.aligncenter,
 
 .lang-switcher {
     margin-right: 40px;
-    color: #fff !important;
+    color: #fff ;
+    transition: color 0.3s ease;
+}
+/* When scrolled */
+.navbar.scrolled .lang-switcher {
+    color: #000 !important; /* Change this to whatever color you want */
 }
 
 .navbar-icon {
