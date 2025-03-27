@@ -191,57 +191,63 @@
          <!-- topbar end -->
 
         <!-- masthead -->
-        <header id="masthead" class="site-header clearfix">
 
+        <!-- masthead -->
+        <header id="masthead" class="site-header clearfix">
             <div class="header-main clearfix">
-                <div class="container mobile_relative">
-                    <div class="row">
-                        <div class="site-logo col-md-3 col-sm-6 col-xs-6">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <!-- Logo -->
+                        <div class="col-6 col-md-3 site-logo">
                             <a href="index.html" class="logo">
-                                <img src="images/logo-light.png" alt="Amaala Global" class="logo-light show-logo">
-                                <img src="images/logo.png" alt="Amaala Global" class="logo-dark hide-logo">
-                                <!-- <span class="logo-text">Amaala Global</span> -->
+                                <img src="images/logo-light.png" alt="Amaala Global" class="logo-light">
+                                <img src="images/logo.png" alt="Amaala Global" class="logo-dark">
                             </a>
-                            <h1 class="site-title"><a href="#">Amaala Global : Industrial Manufacturing, Logistics, & Contracting</a></h1>
-                            <h2 class="site-description">Efficient Industrial Solutions for Manufacturing, Logistics, & More</h2>
                         </div>
-                        <div class="site-menu col-md-9 col-sm-6 col-xs-6">
-                            <nav id="site-navigation" class="main-nav primary-nav nav">
+        
+                        <!-- Mobile: Lang + Toggle | Desktop: Navigation -->
+                        <div class="col-6 col-md-9 site-header-right d-flex justify-content-end align-items-center">
+                            <!-- Desktop Navigation Menu -->
+                            <nav id="site-navigation" class="main-nav primary-nav nav d-none d-md-block">
                                 <ul class="menu">
                                     <li><a href="index.html">Home</a></li>
                                     <li class="has-children"><a href="manufacturing.html">Services</a>
                                         <ul class="sub-menu">
-                                            <li><a href="transportation.html">Transportation </a></li>
+                                            <li><a href="transportation.html">Transportation</a></li>
                                             <li><a href="manufacturing.html">Manufacturing</a></li>
-                                            <li><a href="logistics.html">Logistics  </a></li>
+                                            <li><a href="logistics.html">Logistics</a></li>
                                             <li><a href="contracting.html">Contracting</a></li>
-                                            <li><a href="facilities.html">Facilities management Services</a></li>
-                                            
+                                            <li><a href="facilities.html">Facilities Management Services</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="about-us.html">About</a></li>
-                                  
                                     <li><a href="blog.html">Blog</a></li>
-                                   
                                     <li><a href="contact.html">Contact</a></li>
-                                   
-
                                     <li class="extra-menu-item menu-item-button-link">
                                         <a href="request-a-quote.html" class="fh-btn btn">Get A Quote</a>
                                     </li>
                                 </ul>
                             </nav>
+        
+                            <!-- Mobile: Language & Toggle Buttons -->
+                            <div class="mobile-header-icons d-flex d-md-none align-items-center gap-2">
+                                <a href="#" id="lang-btn" onclick="toggleLanguage()" class="lang-switcher d-md-none">
+                                    🌐 AR
+                                </a>
+                                <a href="#" class="navbar-toggle">
+                                    <span class="navbar-icon">
+                                        <span class="navbars-line"></span>
+                                    </span>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <a href="#" class="navbar-toggle">
-                        <span class="navbar-icon">
-							<span class="navbars-line"></span>
-                        </span>
-                    </a>
                 </div>
             </div>
-
         </header>
+        
+        
+        
 
         <!-- masthead end -->
 
@@ -421,8 +427,8 @@
                             <a class="card h-100" href="transportation.html">
                                 <img src="./images/services/logistics.jpg" class="card-img-top" alt="Image">
                                 <div class="card-body">
-                                    <h4 class="card-title">Transportation</h4>
-                                    <p class="card-text">Expert transportation solutions for large and heavy equipment and vehicles.</p>
+                                    <h4 id="serv-t-1" class="card-title">Transportation</h4>
+                                    <p id="serv-p-1" class="card-text">Expert transportation solutions for large and heavy equipment and vehicles.</p>
                                 
                                 </div>
                             </a>
@@ -431,8 +437,8 @@
                             <a class="card h-100" href="manufacturing.html">
                                 <img src="./images/gallery/contracting/2.jpg" class="card-img-top" alt="Image">
                                 <div class="card-body">
-                                    <h4 class="card-title">Pre-fab construction</h4>
-                                    <p class="card-text">From concept to production, we deliver high-quality products that meet our client needs</p>
+                                    <h4 id="serv-t-2" class="card-title">Pre-fab construction</h4>
+                                    <p id="serv-p-2" class="card-text">From concept to production, we deliver high-quality products that meet our client needs</p>
                                 </div>
                             </a>
                         </div>
@@ -440,8 +446,8 @@
                             <a class="card h-100" href="logistics.html">
                                 <img src="./images/main-slider/slide3.jpg" class="card-img-top" alt="Image">
                                 <div class="card-body">
-                                    <h4 class="card-title">Logistics</h4>
-                                    <p class="card-text">Delivery of any freight from a place to another place quickly to save your cost and your time.</p>
+                                    <h4 id="serv-t-3" class="card-title">Logistics</h4>
+                                    <p id="serv-p-3" class="card-text">Delivery of any freight from a place to another place quickly to save your cost and your time.</p>
                                 </div>
                             </a>
                         </div>
@@ -450,8 +456,8 @@
                             <a class="card h-100" href="contracting.html">
                                 <img src="./images/main-slider/slide4.jpg" class="card-img-top" alt="Image">
                                 <div class="card-body">
-                                    <h4 class="card-title">Contracting</h4>
-                                    <p class="card-text">We offer a full range of services, from pre-construction planning and design to construction management</p>
+                                    <h4 id="serv-t-4" class="card-title">Contracting</h4>
+                                    <p id="serv-p-4" class="card-text">We offer a full range of services, from pre-construction planning and design to construction management</p>
                                 </div>
                             </a>
                         </div>
@@ -459,8 +465,8 @@
                             <a class="card h-100" href="facilities.html">
                                 <img src="./images/bg/fecility.jpg" class="card-img-top" alt="Image">
                                 <div class="card-body">
-                                    <h4 class="card-title">Facilities management</h4>
-                                    <p class="card-text">Ensuring the smooth and efficient operation of your buildings and infrastructure.</p>
+                                    <h4 id="serv-t-5" class="card-title">Facilities management</h4>
+                                    <p id="serv-p-5" class="card-text">Ensuring the smooth and efficient operation of your buildings and infrastructure.</p>
                                 </div>
                             </a>
                         </div>
@@ -468,8 +474,8 @@
                             <div class="card h-100">
                                 <img src="./images/gallery/f-forwarding.jpeg" class="card-img-top" alt="Image">
                                 <div class="card-body">
-                                    <h4 class="card-title">Freight forwarding</h4>
-                                    <p class="card-text">Specialises in international freight forwarding of merchandise and associated general logistic services.</p>
+                                    <h4 id="serv-t-6" class="card-title">Freight forwarding</h4>
+                                    <p id="serv-p-6" class="card-text">Specialises in international freight forwarding of merchandise and associated general logistic services.</p>
                                 </div>
                             </div>
                         </div>
@@ -631,7 +637,7 @@
                                         <i class="fa fa-star fa-md"></i><i class="fa fa-star fa-md"></i>
                                         <i class="fa fa-star fa-md"></i><i class="fa fa-star fa-md"></i>
                                     </div>
-                                    <div class="testi-des">We greatly appreciate Amaala Global's outstanding service in supporting our operations. From staff accommodations to maintenance work, their commitment to excellence has made a significant impact. Highly recommended!</div>
+                                    <div class="testi-des">We greatly appreciate Amaala Global's outstanding service in supporting our team. From staff accommodations to maintenance work, their commitment to excellence has made a significant impact. Highly recommended!</div>
                                     <div class="info clearfix">
                                         <span class="testi-name">Limousine</span>
                                         <a href="https://www.limousina.com/" class="testi-job">https://www.limousina.com/</a>
@@ -652,7 +658,7 @@
                                         <i class="fa fa-star fa-md"></i><i class="fa fa-star fa-md"></i>
                                         <i class="fa fa-star fa-md"></i><i class="fa fa-star fa-md"></i>
                                     </div>
-                                    <div class="testi-des">Amaala Global has been a trusted partner for Zahid Group, providing top-notch transportation solutions with their Lo-Bed, and Hydraulic Lo-Bed,  services. Their reliability and professionalism ensure our cargo moves safely and efficiently every time!</div>
+                                    <div class="testi-des">Amaala Global has established itself as a dependable and esteemed partner of Zahid Group, delivering superior transportation services, particularly in Lo-Bed and Hydraulic Lo-Bed operations. Their dedication to safety, precision, and efficiency ensures the consistent and secure delivery of our cargo across all projects.</div>
                                     <div class="info clearfix">
                                         <span class="testi-name">Zahid group</span>
                                         <a href="https://zahid.com/" class="testi-job">https://zahid.com/</a>
@@ -673,7 +679,7 @@
                                         <i class="fa fa-star fa-md"></i><i class="fa fa-star fa-md"></i>
                                         <i class="fa fa-star fa-md"></i><i class="fa fa-star fa-md"></i>
                                     </div>
-                                    <div class="testi-des">Red Sea Global proudly partners with Amaala Global for our protocabin manufacturing and maintenance needs. Their expertise, reliability, and dedication to quality have been instrumental in supporting our operations.</div>
+                                    <div class="testi-des">Red Sea Global proudly partners with Amaala Global for our protocabin manufacturing and maintenance needs. Their expertise, reliability, and dedication to quality have been instrumental in supporting our project.</div>
                                     <div class="info clearfix">
                                         <span class="testi-name">Red Sea Global</span>
                                         <a href="https://www.redseaglobal.com/" class="testi-job">https://www.redseaglobal.com/</a>
@@ -694,40 +700,40 @@
                 <div class="row">
                     <div class="col-lg-5 col-md-6  secpaddlf">
                         <div class="fh-section-title clearfix  text-left version-dark paddbtm40">
-                            <h2>Why Choosing us?</h2>
+                            <h2 id="why-cho-head">Why Choosing us?</h2>
                         </div>
                         <div class="fh-icon-box  style-2 icon-left has-line">
                             <span class="fh-icon"><i class="flaticon-route"></i></span>
-                            <h4 class="box-title"><span>End-to-End Solutions</span></h4>
+                            <h4 id="why-cho-spec-t-1" class="box-title"><span>End-to-End Solutions</span></h4>
                             <div class="desc">
-                                <p>Clients benefit from a single point of contact for all their industrial needs.</p>
+                                <p id="why-cho-spec-p-1">Clients benefit from a single point of contact for all their industrial needs.</p>
                             </div>
                         </div>
                         <div class="fh-icon-box  style-2 icon-left has-line">
                             <span class="fh-icon"><i class="flaticon-alarm-clock"></i></span>
-                            <h4 class="box-title"><span>Streamlined Operations</span></h4>
+                            <h4 id="why-cho-spec-t-2" class="box-title"><span>Streamlined Operations</span></h4>
                             <div class="desc">
-                                <p>Optimize processes, eliminate redundancies, and achieve economies of scale.</p>
+                                <p id="why-cho-spec-p-2">Optimize processes, eliminate redundancies, and achieve economies of scale.</p>
                             </div>
                         </div>
                         <div class="fh-icon-box  style-2 icon-left has-line">
                             <span class="fh-icon"><i class="flaticon-tool"></i></span>
-                            <h4 class="box-title"><span>Efficiency</span></h4>
+                            <h4 id="why-cho-spec-t-3" class="box-title"><span>Efficiency</span></h4>
                             <div class="desc">
-                                <p>Cost savings for clients, Improved efficiency and faster project completion times.</p>
+                                <p id="why-cho-spec-p-3">Cost savings for clients, Improved efficiency and faster project completion times.</p>
                             </div>
                         </div>
                         <div class="fh-icon-box  style-2 icon-left">
                             <span class="fh-icon"><i class="flaticon-shield-1"></i></span>
-                            <h4 class="box-title"><span>Multi-Disciplinary Expertise</span></h4>
+                            <h4 id="why-cho-spec-t-4" class="box-title"><span>Multi-Disciplinary Expertise</span></h4>
                             <div class="desc">
-                                <p>Expert solutions in every area, ensuring the highest quality results for your projects.</p>
+                                <p id="why-cho-spec-p-4">Expert solutions in every area, ensuring the highest quality results for your projects.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-5 col-lg-offset-2 col-md-6 quofrm1  secpaddlf">
                         <div class="fh-section-title clearfix  text-left version-dark paddbtm40">
-                            <h2>REQUEST A QUOTE</h2>
+                            <h2 id="why-cho-requ-quot">REQUEST A QUOTE</h2>
                         </div>
                         <form id="whatsapp-form">
                             <div class="fh-form-1 fh-form">
@@ -779,7 +785,7 @@
 
             <div class="container">
                 <div class="fh-section-title clearfix  text-left version-dark paddbtm40">
-                    <h2>Trusted by industry leaders</h2>
+                    <h2 id="partner-head">Trusted by industry leaders</h2>
                 </div>
                 
                 <div class="fh-partner clearfix">
@@ -979,6 +985,20 @@
     <a id="scroll-top" class="backtotop" href="#page-top"><i class="fa fa-angle-up"></i></a>
 
 
+    <!-- navbar -->
+
+    <script>
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('header-scrolled');
+            } else {
+                header.classList.remove('header-scrolled');
+            }
+        });
+    </script>
+        
+
 
 
     <!-- this script for whatsapp  -->
@@ -1032,6 +1052,48 @@
                     "servi-h": "Our Main Services",
                     "servi-p": "Our expertise spans a range of key services, providing comprehensive solutions for your business.",
 
+// service cards
+                    "serv-t-1": "Transportation",
+                    "serv-p-1": "Expert transportation solutions for large and heavy equipment and vehicles.",
+
+                    "serv-t-2": "Pre-fab construction",
+                    "serv-p-2": "From concept to production, we deliver high-quality products that meet our client needs",
+
+                    "serv-t-3": "Logistics",
+                    "serv-p-3": "Delivery of any freight from a place to another place quickly to save your cost and your time.",
+
+                    "serv-t-4": "Contracting",
+                    "serv-p-4": "We offer a full range of services, from pre-construction planning and design to construction management",
+
+                    "serv-t-5": "Facilities management",
+                    "serv-p-5": "Ensuring the smooth and efficient operation of your buildings and infrastructure.",
+
+                    "serv-t-6": "Freight forwarding",
+                    "serv-p-6": "Specialises in international freight forwarding of merchandise and associated general logistic services.",
+
+
+                    //why choose us 
+
+                    "why-cho-head": "Why Choosing us?",
+
+                    "why-cho-spec-t-1": "End-to-End Solutions",
+                    "why-cho-spec-p-1": "Clients benefit from a single point of contact for all their industrial needs.",
+
+                    "why-cho-spec-t-2": "Streamlined Operations",
+                    "why-cho-spec-p-3": "Optimize processes, eliminate redundancies, and achieve economies of scale.",
+
+                    "why-cho-spec-t-3": "Efficiency",
+                    "why-cho-spec-p-3": "Cost savings for clients, Improved efficiency and faster project completion times.",
+
+                    "why-cho-spec-t-4": "Multi-Disciplinary Expertise",
+                    "why-cho-spec-p-4": "Expert solutions in every area, ensuring the highest quality results for your projects.",
+
+                    "why-cho-requ-quot": "REQUEST A QUOTE",
+
+                    "partner-head": "Trusted by industry leaders",
+
+
+
                 },
                 "ar": {
                     "button": "EN",
@@ -1060,6 +1122,52 @@
                        
                     "servi-h": "خدماتنا الرئيسية",
                     "servi-p": "خبرتنا تمتد عبر مجموعة من الخدمات الرئيسية، مما يوفر حلولًا شاملة لعملك.",
+
+
+                    // service crds 
+
+                    "serv-t-1": "النقل",
+                    "serv-p-1": "حلول نقل متخصصة للمعدات والمركبات الكبيرة والثقيلة.",
+
+                    "serv-t-2": "البناء الجاهز",
+                    "serv-p-2": "من الفكرة إلى الإنتاج، نقدم منتجات عالية الجودة تلبي احتياجات عملائنا.",
+
+                    "serv-t-3": "الخدمات اللوجستية",
+                    "serv-p-3": "توصيل أي شحنة من مكان إلى آخر بسرعة لتوفير التكلفة والوقت.",
+
+                    "serv-t-4": "المقاولات",
+                    "serv-p-4": "نحن نقدم مجموعة كاملة من الخدمات، بدءًا من التخطيط والتصميم قبل البناء إلى إدارة الإنشاءات.",
+
+                    "serv-t-5": "إدارة المرافق",
+                    "serv-p-5": "ضمان التشغيل السلس والفعال لمبانيك وبنيتك التحتية.",
+
+                    "serv-t-6": "الشحن الدولي",
+                    "serv-p-6": "متخصص في الشحن الدولي للبضائع والخدمات اللوجستية العامة المرتبطة بها.",
+
+
+                    // why choose us 
+
+                      //why choose us 
+
+                   
+                      "why-cho-head": "لماذا اختيارنا؟",
+
+                        "why-cho-spec-t-1": "الحلول الشاملة",
+                        "why-cho-spec-p-1": "يستفيد العملاء من نقطة اتصال واحدة لجميع احتياجاتهم الصناعية.",
+
+                        "why-cho-spec-t-2": "العمليات المبسطة",
+                        "why-cho-spec-p-3": "تحسين العمليات، وإزالة التكرار، وتحقيق وفورات الحجم.",
+
+                        "why-cho-spec-t-3": "الكفاءة",
+                        "why-cho-spec-p-3": "توفير التكاليف للعملاء، تحسين الكفاءة وتسريع إنجاز المشاريع.",
+
+                        "why-cho-spec-t-4": "خبرة متعددة التخصصات",
+                        "why-cho-spec-p-4": "حلول خبيرة في كل مجال، تضمن أعلى جودة من النتائج لمشاريعك.",
+
+                        "why-cho-requ-quot": "اطلب عرض سعر",
+                   
+                       "partner-head": "موثوق به من قِبل رواد الصناعة"  , 
+
 
                     
                 }
@@ -1101,6 +1209,42 @@
                 // about
                 document.getElementById("servi-h").textContent = translations[currentLang]["servi-h"];
                 document.getElementById("servi-p").textContent = translations[currentLang]["servi-p"];
+
+
+                
+                // about
+                document.getElementById("serv-t-1").textContent = translations[currentLang]["serv-t-1"];
+                document.getElementById("serv-p-1").textContent = translations[currentLang]["serv-p-1"];
+                document.getElementById("serv-t-2").textContent = translations[currentLang]["serv-t-2"];
+                document.getElementById("serv-p-2").textContent = translations[currentLang]["serv-p-2"];
+                document.getElementById("serv-t-3").textContent = translations[currentLang]["serv-t-3"];
+                document.getElementById("serv-p-3").textContent = translations[currentLang]["serv-p-3"];
+                document.getElementById("serv-t-4").textContent = translations[currentLang]["serv-t-4"];
+                document.getElementById("serv-p-4").textContent = translations[currentLang]["serv-p-4"];
+                document.getElementById("serv-t-5").textContent = translations[currentLang]["serv-t-5"];
+                document.getElementById("serv-p-5").textContent = translations[currentLang]["serv-p-5"];
+                document.getElementById("serv-t-6").textContent = translations[currentLang]["serv-t-6"];
+                document.getElementById("serv-p-6").textContent = translations[currentLang]["serv-p-6"];
+               
+
+                // why choose us 
+
+                document.getElementById("why-cho-head").textContent = translations[currentLang]["why-cho-head"];
+
+                document.getElementById("why-cho-spec-t-1").textContent = translations[currentLang]["why-cho-spec-t-1"];
+                document.getElementById("why-cho-spec-p-1").textContent = translations[currentLang]["why-cho-spec-p-1"];
+                document.getElementById("why-cho-spec-t-2").textContent = translations[currentLang]["why-cho-spec-t-2"];
+                document.getElementById("why-cho-spec-p-2").textContent = translations[currentLang]["why-cho-spec-p-2"];
+                document.getElementById("why-cho-spec-t-3").textContent = translations[currentLang]["why-cho-spec-t-3"];
+                document.getElementById("why-cho-spec-p-3").textContent = translations[currentLang]["why-cho-spec-p-3"];
+                document.getElementById("why-cho-spec-t-4").textContent = translations[currentLang]["why-cho-spec-t-4"];
+                document.getElementById("why-cho-spec-p-4").textContent = translations[currentLang]["why-cho-spec-p-4"];
+
+                document.getElementById("why-cho-requ-quot").textContent = translations[currentLang]["why-cho-requ-quot"];
+
+                // partner 
+                document.getElementById("partner-head").textContent = translations[currentLang]["partner-head"];
+
 
 
                 // Change text direction for Arabic
