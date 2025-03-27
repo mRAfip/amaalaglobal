@@ -1034,6 +1034,7 @@
 
 
         <!-- <script>
+
             
             const translations = {
                 "en": {
@@ -1285,6 +1286,32 @@
         </script>
    -->
 
+
+
+   <script>
+    // Repeatedly remove the translate banner
+    const killGoogleTranslate = () => {
+      const interval = setInterval(() => {
+        const frame = document.querySelector('.goog-te-banner-frame');
+        const body = document.querySelector('body');
+  
+        if (frame) {
+          frame.remove();
+          body.style.top = '0px';
+        }
+  
+        const balloon = document.querySelector('.goog-te-balloon-frame');
+        if (balloon) balloon.remove();
+  
+        const googElements = document.querySelectorAll('.goog-te-banner-frame, .goog-logo-link, .goog-te-gadget, .goog-te-balloon-frame');
+        googElements.forEach(el => el.style.display = 'none');
+  
+      }, 100);
+    };
+  
+    window.addEventListener('load', killGoogleTranslate);
+  </script>
+  
 
   <script type="text/javascript">
     function googleTranslateElementInit() {
