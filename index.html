@@ -176,7 +176,10 @@
                              <div class="widget cargohub-social-links-widget">
                                  <div class="list-social style-1">
                                     <!-- Your Language Switch Button -->
-                                    <a href="#" class="lang-btn" onclick="translateLanguage('ar')">AR</a>                                     <div id="google_translate_element"></div>
+                                    <a href="#" id="lang-btn" onclick="translateLanguage('ar')">
+                                        <i  class="fi fi-rr-globe"></i>
+                                    </a>
+                                                                        <div id="google_translate_element"></div>
                                      <a href="https://www.instagram.com/amaalaglobal" target="_blank"><i class="fa fa-facebook"></i></a>
                                      <a href="https://www.instagram.com/amaalaglobal" target="_blank"><i class="fa fa-instagram"></i></a>
                                      <a href="https://www.linkedin.com/in/amaala-global-52b097345/" target="_blank"><i class="fa fa-linkedin"></i></a>
@@ -975,7 +978,8 @@
                 </ul>
             </li>
             <li><a href="about-us.html">About Us</a></li>
-            
+            <li><a href="blog.html">Blog</a></li>
+
            
         
            
@@ -1288,48 +1292,13 @@
 
 
 
-   <script>
-    // Repeatedly remove the translate banner
-    const killGoogleTranslate = () => {
-      const interval = setInterval(() => {
-        const frame = document.querySelector('.goog-te-banner-frame');
-        const body = document.querySelector('body');
-  
-        if (frame) {
-          frame.remove();
-          body.style.top = '0px';
-        }
-  
-        const balloon = document.querySelector('.goog-te-balloon-frame');
-        if (balloon) balloon.remove();
-  
-        const googElements = document.querySelectorAll('.goog-te-banner-frame, .goog-logo-link, .goog-te-gadget, .goog-te-balloon-frame');
-        googElements.forEach(el => el.style.display = 'none');
-  
-      }, 100);
-    };
-  
-    window.addEventListener('load', killGoogleTranslate);
-  </script>
-  
+<!-- Google Translate Script -->
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
-  <script type="text/javascript">
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-    }
-  
-    function translateLanguage(lang) {
-      const select = document.querySelector('.goog-te-combo');
-      if (select) {
-        select.value = lang;
-        select.dispatchEvent(new Event('change'));
-      }
-    }
-  </script>
-  
-  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<!-- Load external JavaScript file -->
+<script src="js/translate.js"></script>
 
-  
+
 
     <!-- jquery Liabrary -->
     <script src="js/jquery-1.12.4.min.js"></script>

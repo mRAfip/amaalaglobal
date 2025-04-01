@@ -137,6 +137,11 @@
                          <div class="topbar-right topbar-widgets text-right">
                              <div class="widget cargohub-social-links-widget">
                                  <div class="list-social style-1">
+                                    <!-- Your Language Switch Button -->
+                                    <a href="#" id="lang-btn" onclick="translateLanguage('ar')">
+                                        <i  class="fi fi-rr-globe"></i>
+                                    </a>
+                                                                        <div id="google_translate_element"></div>
                                      <a href="https://www.instagram.com/amaalaglobal" target="_blank"><i class="fa fa-facebook"></i></a>
                                      <a href="https://www.instagram.com/amaalaglobal" target="_blank"><i class="fa fa-instagram"></i></a>
                                      <a href="https://www.linkedin.com/in/amaala-global-52b097345/" target="_blank"><i class="fa fa-linkedin"></i></a>
@@ -151,7 +156,7 @@
                  </div>
              </div>
          </div>
-         <!-- topbar end -->
+         <!-- Google Translate Widget (Hidden) -->
 
         <!-- masthead -->
         <header id="masthead" class="site-header clearfix">
@@ -412,38 +417,44 @@
     </div>
     <!--End pagewrapper-->
 
-        <!--primary-mobile-nav-->
-    <div class="primary-mobile-nav header-v1" id="primary-mobile-nav" role="navigation">
-        <a href="#" class="close-canvas-mobile-panel">×</a>
-        <ul class="menu">
-            <li ><a href="index.html">Home</a>
-            
-            </li>
-            <li class="menu-item-has-children"><a href="transportation.html">Services</a>
-                <ul class="sub-menu">
-                    <li><a href="transportation.html">Transportation </a></li>
-                    <li><a href="manufacturing.html">Manufacturing</a></li>
-                    <li><a href="logistics.html">Logistics  </a></li>
-                    <li><a href="contracting.html">Contracting</a></li>
-                    <li><a href="facilities.html">Facilities management Services</a>
-                    
-                </li>
-                    
-                </ul>
-            </li>
-            <li><a href="about-us.html">About Us</a></li>
-           
+ <!--primary-mobile-nav-->
+ <div class="primary-mobile-nav header-v1" id="primary-mobile-nav" role="navigation">
+    <a href="#" class="close-canvas-mobile-panel">×</a>
+    <ul class="menu">
+        <li ><a href="index.html">Home</a>
         
-           
-            <li><a href="contact.html">Contact</a></li>
-            <li class="extra-menu-item menu-item-button-link">
-                <a href="request-a-quote.html" class="fh-btn btn">Get A Quote</a>
-            </li>
-        </ul>
+        </li>
+        <li class="menu-item-has-children"><a href="transportation.html">Services</a>
+            <ul class="sub-menu">
+                <li><a href="transportation.html">Transportation </a></li>
+                <li><a href="manufacturing.html">Manufacturing</a></li>
+                <li><a href="logistics.html">Logistics  </a></li>
+                <li><a href="contracting.html">Contracting</a></li>
+                <li><a href="facilities.html">Facilities management Services</a></li>
+                
+                
+              
+                
+            </ul>
+        </li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="blog.html">Blog</a></li>
 
-    </div>
-    <div id="off-canvas-layer" class="off-canvas-layer"></div>
-    <!--primary-mobile-nav end-->
+       
+    
+       
+        <li><a href="contact.html">Contact</a></li>
+
+        <li class="extra-menu-item menu-item-button-link">
+            <a href="request-a-quote.html" class="fh-btn btn">Get A Quote</a>
+        </li>
+    </ul>
+
+</div>
+<div id="off-canvas-layer" class="off-canvas-layer"></div>
+<!--primary-mobile-nav end-->
+
+
 
 
     <!--Scroll to top-->
@@ -481,6 +492,14 @@
             document.getElementById('enquiryForm').reset();
         });
     </script>
+
+
+
+<!-- Google Translate Script -->
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<!-- Load external JavaScript file -->
+<script src="js/translate.js"></script>
 
 
 
